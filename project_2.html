@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors and animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="banner">
+      <div class="logobox">
+        <a class="logo" href="index.html"><img src="logo.webp" alt="Logo" /></a>
+      </div>
+
+      <button class="toggle-btn">☰</button>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project_1.html">Fonts and UI-elements</a></li>
+          <li><a href="project_3.html">Responsive design</a></li>
+        </ul>
+      </nav>
+           <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+    </header>
+    <script src="script.js"></script>
+    <main>
+      <section class="mock_up">
+        <h1>Colors and Animation</h1>
+        <div class="mockup_font"><img src="colors_and_animations_mockup2.png" alt="mockup" /></div>
+      </section>
+      <section id="short_text">
+        <h2>The assignment</h2>
+        <div class="text_box">
+          <p>
+            In this assignment our purpose was to add a color pallet to a mock-up landing page and add animations and a dark theme color pallet to the site as well. I used huemint.com which generate color pallets to find the right color pallet for my
+            site.
+          </p>
+          <p>I used Adobes contrast analyzer to validate if the contrasts were high enough on the colors I chose. To make the dark theme I used Phina Kersly tutorial – https://www.section.io/engineering-education/adding-dark-theme-to-your-site/.</p>
+        </div>
+        
+        <div class="ass_link"><button onclick="window.location.href='https://rkms.dk/kea_3_semester/colors-and-animations/';">See the assignment</button></div>
+      </section>
+
+      <section id="visuel_details">
+        <h2>Visuel details</h2>
+        <div class="detail_cards">
+          <div class="detail_card">
+            
+            <h3>Buttons and animation</h3>
+            <p>
+              In this assignment I was required to add an animation to an element with JavaScript, instead of using only CSS variables. I chose to add a simple scale animation to the call to action button in the header when the user clicks on the
+              button so the click becomes more visible.
+            </p>
+            <div class="detail_font"><img src="animation_buttons.png" alt="buttons" /></div>
+            <p>
+              I kept the design for the buttons on the site uniform in shape and size. The background color varies whether dark- or light mode is activated on the website. I applied the same font-family on the buttons as I used on the paragraphs to
+              tie it together..
+            </p>
+          </div>
+          <div class="detail_card">
+            
+            <h3>Dark mode</h3>
+            <p>
+              In this assignment I had to make a light and dark mode for a mock-up landing page. I started by making the light mode. I used huemint.com to find my color pallet. I then made variable in CSS for the different elements and assigned them
+              a color. In the html file I added a data attribute called ‘data-theme=“light”’, so the default mode would be the light one.
+            </p>
+            <div class="detail_font"><img src="header_darkmode.png" alt="darkmode" /></div>
+            <p>
+              In the CSS file I then made another CSS variable called html[data-theme=”dark”]. Here I added the same elements, but assigned them different colors, but still within the color pallet I used for the light mode. Lastly I used JavaScript
+              to make the input checkbox in the footer toggle between the two modes.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_container">
+        <!--   <div class="logobox">
+        <a class="logo" href="index.html"><img src="logo.webp" alt="Logo" /></a>
+      </div> -->
+
+        <div>
+          <h4>Contact</h4>
+          <p><b>Email:</b></p>
+          <p>Rebe7917@stud.kea.dk</p>
+          <p>Rebecca.katarina@gmail.com</p>
+        </div>
+
+        <div>
+          <h4>About</h4>
+          <p><b>Fullname:</b></p>
+          <p>Rebecca K. M. Schütze</p>
+          <p><b>Location:</b></p>
+          <p>Copenhagen, Denmark</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

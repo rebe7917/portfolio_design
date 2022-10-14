@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="banner">
+      <div class="logobox">
+        <a class="logo" href="index.html"><img src="logo.webp" alt="Logo" /></a>
+      </div>
+
+      <button class="toggle-btn">☰</button>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project_1.html">Fonts and UI-elements</a></li>
+          <li><a href="project_2.html">Colors and Animation</a></li>
+        </ul>
+      </nav>
+           <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+    </header>
+    <main>
+      <section class="mock_up">
+        <h1>Responsive layout</h1>
+        <div class="mockup_font"><img src="mockup_responsive2png.png" alt="mockup" /></div>
+      </section>
+      <section id="short_text">
+        <h2>The assignment</h2>
+        <div class="text_box">
+          <p>
+            In this assignment our purpose was to apply CSS Flex and Grid methods to a mock-up landing page, to make the layout responsive. I had to add background-images in CSS to different div’s and then place them according to the instructions for
+            the assignment.
+          </p>
+          <p>
+            I used media queries with different sizes to make the site responsive. We were also encouraged to add fonts and font hierarchy, I therefor used a clamp in CSS to make the fonts responsive as well. Lastly, I used huemint.com to generate a
+            color pallet for the website, and then applied the pallet on the elements.
+          </p>
+        </div>
+        <div class="ass_link"><button onclick="window.location.href='https://rkms.dk/kea_3_semester/responsive-design/';">See the assignment</button></div>
+      </section>
+
+      <section id="visuel_details">
+        <h2>Visuel details</h2>
+        <div class="detail_cards">
+          <div class="detail_card">
+           
+            <h3>section layout</h3>
+            <p>
+              In various section I used CSS Flex to layout the content. In the mobile version I mostly used flex-direction: column; while in desktop I more often used flex-direction: row;. In the ‘request’ and footer ‘section’ I also used
+              justify-content: space-around; to place the content.
+            </p>
+             <div class="detail_responsive"><img src="responsive_sections.png" alt="" /></div>
+            <p>
+              While in other sections I used space-evenly to layout the content depending on content in each section. I used various sizes in media queries to layout the content in the desktop version, depending on the section and it’s content. To
+              fit the headlines and paragraph into different layouts I added different max-width to them.
+            </p>
+          </div>
+          <div class="detail_card">
+            
+            <h3>Fonts</h3>
+            <p>Besides adding max-width to the different text elements, I also used a clamp (min, val, max) to make the fonts responsive. I used type-scale.com to find my initial font hierarchy. A clamp can also be used on image tags, but since I was required to add all images as background-images I didn’t need to use it for that this time. 
+            </p>
+            <div class=" detail_clamp"><img src="clamp.png" alt="code photo - clamp on fonts" /></div>
+            <p>I used googlefonts.com to find which fonts I wanted on the website. The display font had to stand out a bit more to grab attention so I chose a serif font for the display called ‘PT serif’. For the paragraph and UI-elements I chose a more subtle font called ‘Raleway’. Then add some extra font-weight to some of the paragraphs, where I wanted it to grab a little more attention. </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_container">
+        <!--   <div class="logobox">
+        <a class="logo" href="index.html"><img src="logo.webp" alt="Logo" /></a>
+      </div> -->
+
+        <div>
+          <h4>Contact</h4>
+          <p><b>Email:</b></p>
+          <p>Rebe7917@stud.kea.dk</p>
+          <p>Rebecca.katarina@gmail.com</p>
+        </div>
+
+        <div>
+          <h4>About</h4>
+          <p><b>Fullname:</b></p>
+          <p>Rebecca K. M. Schütze</p>
+          <p><b>Location:</b></p>
+          <p>Copenhagen, Denmark</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
