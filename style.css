@@ -21,9 +21,8 @@ html {
   --color-one: #faf8f5;
   --color-two: #eef4f3;
   --color-three: #bbc6d6;
-  --color-four: #5e3123;
+  --color-four: #7bf6ac;
   --color-five: #032e34;
-  --color-six: #f5912d;
   --color-seven: #81c4c1;
   --color-eight: #4c7d7b;
   --color-nine: #0d4b54;
@@ -46,7 +45,7 @@ h1 {
   font-size: clamp(1.8rem, 5vw, 8rem);
   color: var(--color-eight);
 }
-.first{
+.first {
   font-size: clamp(2.8rem, 8vw, 8rem);
 }
 h2 {
@@ -70,11 +69,11 @@ p {
 
 .banner {
   /*  background: white; */
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1;
   width: 100%;
-  padding:2rem 2rem 0rem 2rem;
+  padding: 2rem 2rem 0rem 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -92,11 +91,17 @@ p {
 .toggle-btn {
   display: none;
   color: var(--color-one);
- 
 }
 a {
+  font-family: var(--font-paragraph);
   text-decoration: none;
   color: var(--color-one);
+}
+a:hover {
+  color: var(--color-four);
+}
+header a{
+  font-size: 0.8rem;
 }
 
 @media (max-width: 600px) {
@@ -130,15 +135,14 @@ a {
   }
 }
 .logobox img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 /*FRONT PAGE*/
 #frontpage {
   display: grid;
   padding: 2rem 2rem 2rem 2rem;
   min-height: 20vh;
-  background-color: var(--color-);
 }
 .front_container {
   display: flex;
@@ -164,13 +168,12 @@ a {
   #frontpage {
     display: grid;
 
-    min-height:27vh;
+    min-height: 30vh;
   }
- 
 }
-@media (min-width: 1200px){
- .front_container{
-     min-height:50vh;
+@media (min-width: 1200px) {
+  .front_container {
+    min-height: 70vh;
   }
 }
 
@@ -184,6 +187,7 @@ a {
 }
 #intro h2 {
   padding-bottom: 0.3rem;
+  text-align: center;
 }
 #intro p {
   color: var(--color-five);
@@ -285,9 +289,7 @@ a {
   .projekt_card h3 {
     max-width: 350px;
   }
-
 }
-
 
 /*CARDS SLUT*/
 
@@ -297,7 +299,7 @@ a {
   padding: 2rem 2rem 2rem 2rem;
   /* background-color: wheat; */
 }
-#outro p{
+#outro p {
   font-weight: 500;
 }
 .outro_container {
@@ -322,7 +324,6 @@ a {
   #outro p {
     max-width: 650px;
     font-size: 1rem;
-    
   }
 }
 /*OUTTRO SLUT*/
@@ -337,12 +338,15 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
 }
 .about {
   display: flex;
   flex-wrap: wrap;
 }
-
+.git_link {
+  font-size: 0.7rem;
+}
 footer p {
   font-size: 0.7rem;
   color: var(--color-one);
@@ -361,7 +365,7 @@ footer p {
 }
 /*FOOTER SLUT*/
 
-/*PROJEKT 1*/
+/*PROJEKT*/
 .mock_up {
   padding: 2rem;
 }
@@ -396,7 +400,7 @@ footer p {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 0.5rem 1rem 1rem 1rem;
 }
-.detail_cards{
+.detail_cards {
   display: grid;
   gap: 2rem;
 }
@@ -427,21 +431,21 @@ footer p {
 .detail_box p {
   max-width: 250px;
 }
- .ass_link {
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-  }
-  .ass_link button {
-    min-width: 150px;
-    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
-    color: var(--color-one);
-    font-weight: 500;
-    box-shadow: var(--color-nine) 0px 1px 2px 0px;
-    background-color: var(--color-ten);
+.ass_link {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.ass_link button {
+  min-width: 150px;
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  color: var(--color-one);
+  font-weight: 500;
+  box-shadow: var(--color-nine) 0px 1px 2px 0px;
+  background-color: var(--color-ten);
   border: none;
-    border-radius: 30px;
-  }
+  border-radius: 30px;
+}
 @media (min-width: 500px) {
   .text_box {
     display: flex;
@@ -482,7 +486,6 @@ footer p {
   }
 }
 @media (min-width: 700px) {
-  
   .detail_cards {
     display: flex;
     padding: 1.5rem;
@@ -493,7 +496,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
     padding: 0.5rem 1rem 1rem 1rem;
     gap: 1rem;
   }
@@ -513,22 +516,31 @@ footer p {
 }
 
 /*   */
-/*PROJEKT 1 SLUT*/
+/*PROJEKT  SLUT*/
 
-/*PROJEKT 2*/
-/*PROJEKT 2 SLUT*/
 
-/*PROJEKT 3*/
-/*PROJEKT 3 SLUT*/
 .progress-container {
   width: 100%;
   height: 8px;
-  background: #ccc;
-  
+  background: var(--color-nine);
 }
 
 .progress-bar {
   height: 8px;
-  background: var(--color-seven);
+  background: var(--color-four);
   width: 0%;
+}
+.linkedin {
+  width: 30px;
+  height:30px;
+}
+.facebook {
+   width: 26px;
+  height:26px;
+}
+.socials {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding-top: 0.5rem;
 }

@@ -42,13 +42,16 @@ const propertiesZoom = {
 };
 const keyframesZoom = [{ transform: "scale(1)" }, { transform: "scale(0.9)" }, { transform: "scale(1)" }];
 
-// register click
-buttons.addEventListener("mouseover", buttonClicked);
+buttons.forEach((button, i) => {
+  button.addEventListener("mouseover", () => {
+    buttonClicked(i);
+  });
+});
 
-function buttonClicked() {
+function buttonClicked(i) {
   console.log("Button clicked!");
 
-  const zoom = buttons.animate(keyframesZoom, propertiesZoom);
+  const zoom = buttons[i].animate(keyframesZoom, propertiesZoom);
   zoom.play();
 }
 
